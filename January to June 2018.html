@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<style>
+		td:hover{color: dodgerblue; font-size: 25px;}
+		tr:hover{color: green; font-size: 20px;}
+		h1{color: dodgerblue; font-size: 60px;}
+	</style>
+</head>
+<body style="background-color: mistyrose">
+<a href="" class="navbar-brand" data-toggle="modal" data-target="#myModal" ><img src="img/logo.jpg" class="img-circle" alt="Cinque Terre" width="60px" height="60px"/></a>
+<div class="container">
+	<p align="right"><a href="index.html" class="btn btn-info btn-sm" span class="glyphicon glyphicon-remove"></span> Close
+					</a> 
+			<a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+			<a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+	</p>
+  <h1 align="center" >Noman Computer <span>Training Center</span></h1>
+		
+  <h3 align="center">Dhulihar, Satkhira </h3>  
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+		<div class="row mt-2">
+            <div class="col-sm-1"><h4>NSTC News</h4></div>
+            <div class="col-sm-11">
+                <marquee class="text-center bg-light">
+				<h4>(১) এতদ্বারা নোমান কম্পিউটারের সকল শিক্ষার্থীদের অবগতির জন্য জানানো যাচ্ছে যে, আগামি ১ মে ২০১৮ আন্তর্জাতিক শ্রমিক দিবস উপলক্ষ্যে অত্র প্রতিষ্ঠান ছুটি থাকবে।  
+				(২) ১ মে ২০১৮ সকাল ৯.৩০ মিনিটে অত্র প্রতিষ্ঠানে  বিগত জুলাই-ডিসেম্বর -২০১৭ সালে পরীক্ষায় অংশগ্রহণ করে কৃতিত্বের সাথে ফলাফল অর্জন করায় তাদেরকে অভিনন্দন ও সরকারি সনদপদত্র প্রদান করা হবে। 
+				</h4>
+				</marquee>
+            </div>
+        </div>
+  
+  <table class="table table-bordered table-striped">
+    <thead>
+		<tr>
+		<th>Serial</th> 
+        <th>Student_Name</th>
+        <th>ID</th>
+        <th>C_ code</th>
+		<th>Address</th>
+		<th>Email ID</th>
+		<th>Phone_Number</th>
+		<th>Photos</th>
+		</tr>
+    </thead>
+	
+	    <tbody id="myTable">
+	<tr>
+        <td>1</td>
+        <td>Md. Saiful Islam </td>
+        <td>153</td>
+		<td>A</td> 
+		<td>Baluigasha</td>
+		<td></td>
+		<td>01725-049100</td>
+		<td><img src="img/23/15.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+       <td>2</td>
+        <td>Nogibullah Hossen </td>
+        <td>156</td>
+		<td>A</td> 
+		<td>Baluigasha</td>
+		<td>mdnogibullahislam78@gmail.com</td>
+		<td>01743-194392</td>
+		<td><img src="img/23/02.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>3</td>
+        <td>Ms. Runa Parven</td>
+        <td>158</td>
+		<td>G</td> 
+		<td>Boyarbatan</td>
+		<td> </td>
+		<td>01703-577246</td>
+		<td><img src="img/23/20.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>4</td>
+        <td>Md. Mhedi Hassan</td>
+        <td>159</td>
+		<td>A</td>
+		<td> Berbari</td>
+		<td> </td>
+		<td>01746-645739</td>
+		<td><img src="img/23/03.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>5</td>
+        <td>Abir Hossain</td>
+        <td>160</td>
+		<td>A</td>
+		<td>Tomaltola </td>
+		<td> </td>
+		<td>01729-117870</td>
+		<td><img src="img/23/04.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>6</td>
+        <td>Md. Rasel Hossen </td>
+        <td>161</td>
+		<td>G</td>
+		<td>Komorpur</td>
+		<td>rasel.hossain07@gmail.com</td>
+		<td>01748-496186</td>
+		<td><img src="img/23/08.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>7</td>
+        <td>Sujit Kumar Mondal </td>
+        <td>162</td>
+		<td>A</td>
+		<td>Fuyzullapur </td>
+		<td> </td>
+		<td>01784-776384</td>
+		<td><img src="img/23/07.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>8</td>
+        <td>Rashidul Islam </td>
+        <td>163</td>
+		<td>A</td>
+		<td>Dhulihar </td>
+		<td> </td>
+		<td>01788-737008</td>
+		<td><img src="img/23/10.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>9</td>
+        <td>Habibur Rahman </td>
+        <td>160</td>
+		<td>G</td>
+		<td>Dhulihar</td>
+		<td>rjsm.habibur01@gmail.com </td>
+		<td>01766-76648</td>
+		<td><img src="img/23/12.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>10</td>
+        <td>Md. Alamgir Hossen </td>
+        <td>165</td>
+		<td>G</td>
+		<td>Jahanabaz</td>
+		<td> </td>
+		<td>01740-599061</td>
+		<td><img src="img/23/11.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>11</td>
+        <td>Shik Mahfouj Ahmmed </td>
+        <td>166</td>
+		<td>G</td>
+		<td>Dhulihar</td>
+		<td>mahfoujstk@gmail.com </td>
+		<td>01746-645739</td>
+		<td><img src="img/23/14.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>12</td>
+        <td>Md Abu Musa </td>
+        <td>167</td>
+		<td>A</td>
+		<td>Berbari </td>
+		<td>raselstk420@gmail.com</td>
+		<td>01771-790520</td>
+		<td><img src="img/23/13.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>13</td>
+        <td>Shurav Mollick </td>
+        <td>168</td>
+		<td>A</td>
+		<td>Fuyzullapur </td>
+		<td> </td>
+		<td>01705-338485</td>
+		<td><img src="img/23/09.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>14</td>
+        <td>Shirena Khatun </td>
+        <td>169</td>
+		<td>G</td>
+		<td>Mellekpara </td>
+		<td> </td>
+		<td>01788-790285</td>
+		<td><img src="img/23/16.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>15</td>
+        <td>Achinto Debnath </td>
+        <td>170</td>
+		<td>G</td>
+		<td>Brahmarajpur </td>
+		<td>achintodebnath20@gmail.com </td>
+		<td>01705-727778</td>
+		<td><img src="img/23/17.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>16</td>
+        <td>Beauty Sultana </td>
+        <td>171</td>
+		<td>A</td>
+		<td>Baluigasha </td>
+		<td> </td>
+		<td>01746-645739</td>
+		<td><img src="img/23/06.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>17</td>
+        <td>Al Mahmud </td>
+        <td>172</td>
+		<td>G</td>
+		<td>Baluigasha </td>
+		<td> </td>
+		<td>01708-635207</td>
+		<td><img src="img/23/18.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>18</td>
+        <td>Abir Hossain </td>
+        <td>173</td>
+		<td>G</td>
+		<td>Baluigasha </td>
+		<td> </td>
+		<td>01736-240828</td>
+		<td><img src="img/23/19.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>19</td>
+        <td>Ruhul Amin </td>
+        <td>174</td>
+		<td>G</td>
+		<td>Kalerdanga </td>
+		<td> </td>
+		<td>017721-388739</td>
+		<td><img src="img/23/22.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>20</td>
+        <td>Md. Naeem Ahmed</td>
+        <td>175</td>
+		<td>G</td>
+		<td>Berbari</td>
+		<td> </td>
+		<td>Assisuni</td>
+		<td><img src="img/23/21.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>21</td>
+        <td>Shila Khatun </td>
+        <td>176</td>
+		<td>A</td>
+		<td>Kalaroa </td>
+		<td> </td>
+		<td>01775-921581</td>
+		<td><img src="img/23/01.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>22</td>
+        <td>Shamuzzaman </td>
+        <td>177</td>
+		<td>A</td>
+		<td>Gobindopur </td>
+		<td> </td>
+		<td>01721-775126</td>
+		<td><img src="img/23/05.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+		   <tr>
+        <td>23</td>
+        <td>Bappy </td>
+        <td></td>
+		<td>G</td>
+		<td>Daspara </td>
+		<td> </td>
+		<td>01704623745</td>
+		<td><img src="img/23/23.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+		 
+        
+	  
+	  
+	  
+	  
+	  
+    </tbody>
+  </table>
+  
+  <p>Please see your detailse: <b>Press your ID</b></p>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
+</html>

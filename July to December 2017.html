@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<style>
+		td:hover{color: dodgerblue; font-size: 25px;}
+		tr:hover{color: green; font-size: 20px;}
+		h1{color: dodgerblue; font-size: 60px;}
+	</style>
+</head>
+<body style="background-color: mistyrose">
+<a href="" class="navbar-brand" data-toggle="modal" data-target="#myModal" ><img src="img/logo.jpg" class="img-circle" alt="Cinque Terre" width="60px" height="60px"/></a>
+<div class="container">
+	<p align="right"><a href="index.html" class="btn btn-info btn-sm" span class="glyphicon glyphicon-remove"></span> Close
+					</a> 
+			<a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+			<a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+	</p>
+  <h1 align="center" >Noman Computer <span>Training Center</span></h1>
+		
+  <h3 align="center">Dhulihar, Satkhira </h3>  
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  
+		
+<table class="table table-hover active example" width="100%" >
+<thead>
+	<tr>
+		<th>Sl</th>
+		<th>Student Name</th>
+		<th>ID</th>
+		<th>C_Code</th>
+		<th>Address</th>
+		<th>Email ID</th>
+		<th>Phone</th>
+		<th>Photo</th>
+	</tr>
+	</thead>
+	<tbody id="myTable">
+	<tr>
+		<td>1</td>
+		<td>Sumya Sultana Asa</td>
+		<td>122</td>
+		<td>A</td>
+		<td>Komorpur</td>
+		<td>sumayaasa10@gmail.com </td>
+		<td></td>
+		<td><img src="img/35/01 Sumaya++.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+		
+	<tr>
+		<td>2</td>
+		<td>Asma Khatun</td>
+		<td>123</td>
+		<td>A</td>
+		<td>Komorpur</td>
+		<td>asmamoyna102@gmail.com </td>
+		<td></td>
+		<td><img src="img/35/123 Asma.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+	
+	<tr>
+		<td>3</td>
+		<td>Suporna Paul</td>
+		<td>110</td>
+		<td>A</td>
+		<td>Brhmarajpur</td>
+		<td>supornapaul40@gmail.com </td>
+		<td></td>
+		<td><img src="img/35/Suporna Paul.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Fayjullah Mahmud</td>
+		<td>148</td>
+		<td>G</td>
+		<td>Katakhali, Pirojpur</td>
+		<td>fayjullahm54@gmail.com </td>
+		<td>01725236254</td>
+		<td><img src="img/35/f.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr> 
+	<tr>
+		<td>5</td>
+		<td>Johirul Islam Babu</td>
+		<td>141</td>
+		<td>A</td>
+		<td>Jeala</td>
+		<td>jahirulislam7330@gmail.com </td>
+		<td>01836-967330</td>
+		<td><img src="img/35/Johirul Islam Babu.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>Swapan Kumar Dhali</td>
+		<td>142</td>
+		<td>A</td>
+		<td>Jeala</td>
+		<td></td>
+		<td>01752280228</td>
+		<td><img src="img/35/Swapon Kumar.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>Debashis Kumar Mandol</td>
+		<td>131</td>
+		<td>A</td>
+		<td>Komorpur</td>
+		<td></td>
+		<td>01752280228</td>
+		<td><img src="img/35/131 Debashis.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+	<tr>
+		<td>8</td>
+		<td>Dhiraj Debnath</td>
+		<td>104</td>
+		<td>A</td>
+		<td>Gobindapur</td>
+		<td></td>
+		<td>01745851513</td>
+		<td><img src="img/35/104 Dheraj.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+	<tr>
+		<td>9</td>
+		<td>Halima Khatun</td>
+		<td>114</td>
+		<td>A</td>
+		<td>Kazir Basa</td>
+		<td>kazir.halima@gmail.com </td>
+		<td></td>
+		<td><img src="img/35/Halima khatun.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+	
+	<tr>
+		<td>10</td>
+		<td>Abdullah Al Mamun</td>
+		<td>146</td>
+		<td>A</td>
+		<td>Patkelghata</td>
+		<td></td>
+		<td>01735151848</td>
+		<td><img src="img/35/Abdullah Al mamun.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+	<tr>
+		<td>11</td>
+		<td>Feroz</td>
+		<td>130</td>
+		<td>A</td>
+		<td>Chandpur</td>
+		<td></td>
+		<td>01743-432378</td>
+		<td><img src="img/35/130 Feroz.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+	<tr>
+		<td>12</td>
+		<td>Khukhumoni</td>
+		<td></td>
+		<td>A</td>
+		<td>Chandpur</td>
+		<td></td>
+		<td></td>
+		<td><img src="img/35/khkumony.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+	<tr>
+		<td>13</td>
+		<td>Md. Abdul Alim</td>
+		<td></td>
+		<td>A</td>
+		<td>Chandpur</td>
+		<td></td>
+		<td>01743369650</td>
+		<td><img src="img/35/Abdul Alim.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+	<tr>
+		<td>14</td>
+		<td>Mamun Hossain</td>
+		<td></td>
+		<td>A</td>
+		<td>Chandpur</td>
+		<td></td>
+		<td>01788736998</td>
+		<td><img src="img/35/Mamun Hossen.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+	<tr>
+		<td>15</td>
+		<td>Babor Ali</td>
+		<td></td>
+		<td>A</td>
+		<td>Chandpur</td>
+		<td></td>
+		<td>01744272614</td>
+		<td><img src="img/35/Babor Ali.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+	
+	<tr>
+		<td>16</td>
+		<td>Proshanto Biswas</td>
+		<td></td>
+		<td>A</td>
+		<td>Ghoshpara</td>
+		<td></td>
+		<td>01758418056</td>
+		<td><img src="img/35/Prosatno Biswas.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+	<tr>
+		<td>17</td>
+		<td>Asaduzzaman</td>
+		<td>137</td>
+		<td>G</td>
+		<td>Brodal, Satkhira</td>
+		<td>asad1121988@gmail.com </td>
+		<td>01789272507</td>
+		<td><img src="img/35/02 Asad.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+	<tr>
+		<td>18</td>
+		<td>Rabeya Khatun</td>
+		<td>138</td>
+		<td>G</td>
+		<td>Brodal, Satkhira</td>
+		<td>rabu.satkhira@gmail.com </td>
+		<td></td>
+		<td><img src="img/35/07 Rabeya.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>	
+	<tr>
+		<td>19</td>
+		<td>Farhana Jahan</td>
+		<td>139</td>
+		<td>G</td>
+		<td>Brhmarajpur</td>
+		<td>ruma.satkhira1995@gmail.com</td>
+		<td></td>
+		<td><img src="img/35/08 Farhana.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>  
+	<tr>
+		<td>20</td>
+		<td>Alamin</td>
+		<td>129</td>
+		<td>G</td>
+		<td>Matiadanga</td>
+		<td></td>
+		<td>01926111052</td>
+		<td><img src="img/35/129 Alamin.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>    
+	<tr>
+		<td>21</td>
+		<td>Rita Saha</td>
+		<td>143</td>
+		<td>G</td>
+		<td>Brhmarajpur</td>
+		<td></td>
+		<td></td>
+		<td><img src="img/35/05 Rita.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+	<tr>
+		<td>22</td>
+		<td>Tithi Ghosh</td>
+		<td>144</td>
+		<td>G</td>
+		<td>Foyjullapur</td>
+		<td>tithighoshsat1997@gmail.com </td>
+		<td></td>
+		<td><img src="img/35/tithi Saha.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>  
+	<tr>
+		<td>23</td>
+		<td>Minhaz Ahmed</td>
+		<td>144</td>
+		<td>G</td>
+		<td>Dhulihar</td>
+		<td></td>
+		<td>01782702644</td>
+		<td><img src="img/35/34 Minhaz.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+	<tr>
+		<td>24</td>
+		<td>Suvo Saha</td>
+		<td>144</td>
+		<td>G</td>
+		<td>Brhmarajpur</td>
+		<td>shovosaha1999@gmail.com</td>
+		<td>01785871733</td>
+		<td><img src="img/35/Suvhu saha.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>  
+	<tr>
+		<td>25</td>
+		<td>Md. Sharum Hossen</td>
+		<td>140</td>
+		<td>G</td>
+		<td>Kalerdanga</td>
+		<td></td>
+		<td>01754430285</td>
+		<td><img src="img/35/04 Sharum.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>   
+	<tr>
+		<td>26</td>
+		<td>Md. Uzzal Hossen</td>
+		<td>134</td>
+		<td>G</td>
+		<td>Nungola</td>
+		<td></td>
+		<td>01778716149</td>
+		<td><img src="img/35/24 Uzzal.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr> 
+	<tr>
+		<td>27</td>
+		<td>Pijush Sarkar</td>
+		<td>127</td>
+		<td>G</td>
+		<td>Fingri, Satkhira</td>
+		<td>stk.pijushsarker@gmail.com </td>
+		<td>01775923183</td>
+		<td><img src="img/35/23 Pijush Sarkar.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>
+	<tr>
+		<td>28</td>
+		<td>Joshim Uddin</td>
+		<td>105</td>
+		<td>G</td>
+		<td>Asashuni, Satkhira</td>
+		<td>josimuddin303@gmail.com</td>
+		<td>01786218038</td>
+		<td><img src="img/35/105  Joshim.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>  
+	<tr>
+		<td>29</td>
+		<td>Ekramul Hossain</td>
+		<td>125</td>
+		<td>G</td>
+		<td>Foyjullapur, Satkhira</td>
+		<td></td>
+		<td>01739616241</td>
+		<td><img src="img/35/25 Ekramul.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>   
+	<tr>
+		<td>30</td>
+		<td>Yasin Hossain</td>
+		<td>121</td>
+		<td>G</td>
+		<td>Foyjullapur, Satkhira</td>
+		<td></td>
+		<td>01710856608</td>
+		<td><img src="img/35/121 Yasin.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>   
+	<tr>
+		<td>31</td>
+		<td>Toufiqur Rahman</td>
+		<td>147</td>
+		<td>G</td>
+		<td>Brhmarajpur, Satkhira</td>
+		<td></td>
+		<td>01835700436</td>
+		<td><img src="img/35/Toufiq.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>     
+	<tr>
+		<td>32</td>
+		<td>Majeda Islam Mita</td>
+		<td>152</td>
+		<td>G</td>
+		<td>Nungola, Satkhira</td>
+		<td>majeda1996p@gmail.com </td>
+		<td></td>
+		<td><img src="img/35/152  Majeda Islam Mita.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>    
+	  
+	<tr>
+		<td>33</td>
+		<td>Sukanto Mukharji</td>
+		<td>151</td>
+		<td>G</td>
+		<td>Budhhata, Satkhira</td>
+		<td> </td>
+		<td>01761117567</td>
+		<td><img src="img/35/su.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>  
+	<tr>
+		<td>34</td>
+		<td>Rion Islam</td>
+		<td>136</td>
+		<td>A</td>
+		<td>Dhulihar</td>
+		<td></td>
+		<td>01742434049</td>
+		<td><img src="img/35/rey.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>  
+	  
+	  
+	<tr>
+		<td>35</td>
+		<td>joyita Mandol</td>
+		<td>150</td>
+		<td>G</td>
+		<td>Komorpur</td>
+		<td>joyetakeya@gmail.com</td>
+		<td></td>
+		<td><img src="img/35/joy.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>    
+	  
+	<tr>
+		<td>36</td>
+		<td>jMukti Ghosh</td>
+		<td></td>
+		<td>SP</td>
+		<td>Ghoshpara</td>
+		<td>muktighoshsat@gmail.com </td>
+		<td></td>
+		<td><img src="img/35/153 Mukti.jpg" width="45px" height="50px" class="img-circle" ></td>
+	</tr>   
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+    </tbody>
+  </table>
+  
+  <p>Please see your detailse: <b>Press your ID</b></p>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
+</html>

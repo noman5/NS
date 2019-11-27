@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<style>
+		td:hover{color: dodgerblue; font-size: 25px;}
+		tr:hover{color: green; font-size: 20px;}
+		h1{color: dodgerblue; font-size: 60px;}
+	</style>
+</head>
+<body style="background-color: mistyrose">
+<a href="" class="navbar-brand" data-toggle="modal" data-target="#myModal" ><img src="img/logo.jpg" class="img-circle" alt="Cinque Terre" width="60px" height="60px"/></a>
+<div class="container">
+	<p align="right"><a href="index.html" class="btn btn-info btn-sm" span class="glyphicon glyphicon-remove"></span> Close
+					</a> 
+			<a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+			<a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+	</p>
+  <h1 align="center" >Noman Computer <span>Training Center</span></h1>
+		
+  <h3 align="center">Dhulihar, Satkhira </h3>  
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+		<div class="row mt-2">
+            <div class="col-sm-1"><h4>NSTC News</h4></div>
+            <div class="col-sm-11">
+                <marquee class="text-center bg-light">
+				
+				</marquee>
+            </div>
+        </div>
+  
+  <table class="table table-bordered table-striped">
+    <thead>
+		<tr>
+		<th>Serial</th> 
+        <th>Student_Name</th>
+        <th>ID</th>
+        <th>C_ code</th>
+		<th>Address</th>
+		<th>Email ID</th>
+		<th>Phone_Number</th>
+		<th>Photos</th>
+		</tr>
+    </thead>
+	
+	    <tbody id="myTable">
+	<tr>
+        <td>1</td>
+        <td>Thakur Das Karmokar </td>
+        <td></td>
+		<td></td> 
+		<td>Kazirbasa</td>
+		<td>thakurdaskarmokar31@gmail.com </td>
+		<td>01749428931</td>
+		<td><img src="img/6/tk.jpeg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+       <td>2</td>
+        <td>Biplob Mondal </td>
+        <td></td>
+		<td></td> 
+		<td>komorpur</td>
+		<td></td>
+		<td>01746604823</td>
+		<td><img src="img/6/bm.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>3</td>
+        <td>Omio kumar mondal</td>
+        <td></td>
+		<td></td> 
+		<td>Komorpur</td>
+		<td> </td>
+		<td></td>
+		<td><img src="img/6/om.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>4</td>
+        <td>shariful Islam</td>
+        <td></td>
+		<td></td>
+		<td>Nowabaki, Satkhira</td>
+		<td> </td>
+		<td>01767903795</td>
+		<td><img src="img/6/si.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>5</td>
+        <td>Sourav Debnath</td>
+        <td></td>
+		<td></td>
+		<td>Brhmarajpur </td>
+		<td> </td>
+		<td></td>
+		<td><img src="img/6/sd.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	<tr>
+        <td>6</td>
+        <td>Md. Abu Taher </td>
+        <td></td>
+		<td></td>
+		<td>Ramchandrapur</td>
+		<td></td>
+		<td></td>
+		<td><img src="img/6/at.jpg" width="45px" height="50px" class="img-circle" ></td>
+		</tr>
+	
+    </tbody>
+  </table>
+  
+  <p>Please see your detailse: <b>Press your ID</b></p>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
+</html>
