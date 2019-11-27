@@ -1,2 +1,2 @@
 # NS
-live Here: http://noman.ns/
+live Here: https://noman5.github.io/NSTC/
